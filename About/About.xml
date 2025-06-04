@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Tasty Armory - Sengoku</name>
+	<author>al9000</author>
+	<url>https://github.com/SerinaCE/TastyArmory-Sengoku</url>
+	<supportedVersions>
+	  <li>1.5</li>
+	</supportedVersions>
+		<packageId>al9000.sengoku</packageId>
+	<description>.</description>
+	<modDependencies>
+		<li>
+			<packageId>al9000.tastycore</packageId>
+			<displayName>Tasty Armory - Core</displayName>
+			<downloadUrl>https://github.com/SerinaCE/TastyArmory-Core</downloadUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>al9000.tastycore</li>
+	</loadAfter>
+</ModMetaData>

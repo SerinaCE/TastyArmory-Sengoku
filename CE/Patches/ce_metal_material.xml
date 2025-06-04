@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+                  @Name="TA_NasalBase" or
+                  defName="TA_CoatOfPlates" or
+                  defName="TA_Greathelm" or
+                  defName="TA_KettleHat" or
+                  defName="TA_CoifMaille" or
+                  defName="TA_MailleHoses" or
+                  defName="TA_MailleMittens"
+			]/stuffCategories</xpath>
+		<value>
+			<stuffCategories>
+				<li>Steeled</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+      <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+            defName="TA_Greataxe" or
+            defName="TA_Bill" or
+            defName="TA_ArmingSword" or
+            defName="TA_Scramasax" or
+            defName="TA_Handaxe" or
+            defName="TA_Spear"]/stuffCategories</xpath>
+		<value>
+			<stuffCategories>
+                <li>Metallic_Weapon</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+      
+</Patch>
