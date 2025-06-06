@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality" MayRequireAnyOf="al9000.fireandsteel,al9000.shiningarmor">
+		<defName>TA_NagaeYari</defName>
+		<label>nagae-yari</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Weapons/Melee/TA_NagaeYari</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.75</drawSize>
+		</graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<techLevel>Medieval</techLevel>
+		<weaponTags Inherit="False">
+			<li>MedievalMeleeBasic</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<recipeMaker>
+			<researchPrerequisite>LongBlades</researchPrerequisite>
+			<recipeUsers>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<WoodLog>90</WoodLog>
+		</costList>
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>2.7</Mass>
+			<Bulk MayRequire="CETeam.CombatExtended">10</Bulk>
+			<MeleeCounterParryBonus MayRequire="CETeam.CombatExtended">0.45</MeleeCounterParryBonus>
+			<VEF_MeleeWeaponRange MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">3</VEF_MeleeWeaponRange>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeCritChance MayRequire="CETeam.CombatExtended">0.18</MeleeCritChance>
+			<MeleeParryChance MayRequire="CETeam.CombatExtended">1.50</MeleeParryChance>
+			<MeleeDodgeChance MayRequire="CETeam.CombatExtended">0.9</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<tradeTags>
+			<li>WeaponMelee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.7</cooldownTime>
+			</li>
+			  <li>
+				<label>point</label>
+				<capacities>
+				  <li>Stab</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>2.7</cooldownTime>
+			  </li>
+		</tools>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(0.34,0,0.25)</drawOffset>
+						<angleOffset>-143</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.15,0,0.25)</drawOffset>
+						<angleOffset>-122</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(-0.34,0,0.25)</drawOffset>
+						<angleOffset>-143</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.15,0,0.25)</drawOffset>
+						<angleOffset>122</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+			<li Class="CombatExtended.GunDrawExtension" MayRequire="CETeam.CombatExtended">
+				<DrawOffset>0.32,0.32</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

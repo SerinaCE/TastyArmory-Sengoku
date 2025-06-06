@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
+<!--
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[
-                  @Name="TA_NasalBase" or
-                  defName="TA_CoatOfPlates" or
-                  defName="TA_Greathelm" or
-                  defName="TA_KettleHat" or
-                  defName="TA_CoifMaille" or
-                  defName="TA_MailleHoses" or
-                  defName="TA_MailleMittens"
+                  @Name="TA_AshigaruChestpiece" or
+                  defName="TA_SamuraiHarness" or
+                  defName="TA_SamuiraiShoulderPlates" or
+                  defName="TA_Jingasa" or
+                  defName="TA_Kabuto" or
+                  defName="TA_Menpo" or
+                  defName="TA_SamuraiBoots" or
+                  defName="TA_SamuraiGloves"
 			]/stuffCategories</xpath>
 		<value>
 			<stuffCategories>
@@ -20,18 +21,19 @@
 
       <Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[
-            defName="TA_Greataxe" or
-            defName="TA_Bill" or
-            defName="TA_ArmingSword" or
-            defName="TA_Scramasax" or
-            defName="TA_Handaxe" or
-            defName="TA_Spear"]/stuffCategories</xpath>
+            defName="TA_Ararebo" or
+            defName="TA_Wakizashi" or
+            defName="TA_Katana" or
+            defName="TA_Naginata" or
+            defName="TA_Yari" or
+            defName="TA_NagaeYari"
+            ]/stuffCategories</xpath>
 		<value>
 			<stuffCategories>
                 <li>Metallic_Weapon</li>
 			</stuffCategories>
 		</value>
 	</Operation>
-
+-->
       
 </Patch>

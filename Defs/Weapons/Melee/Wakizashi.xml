@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>TA_Wakizashi</defName>
+		<label>wakizashi</label>
+		<description>small sword.</description>
+		<graphicData>
+			<texPath>Weapons/Melee/TA_Wakizashi</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.78</drawSize>
+		</graphicData>
+		<equippedAngleOffset>-30</equippedAngleOffset>
+		<possessionCount>1</possessionCount>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>NeolithicMeleeDecent</li>
+			<li>MedievalMeleeBasic</li>
+			<li>MedievalMeleeDecent</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<statBases>
+			<WorkToMake>8500</WorkToMake>
+			<Mass>0.7</Mass>
+			<Bulk MayRequire="CETeam.CombatExtended">4</Bulk>
+			<MeleeCounterParryBonus MayRequire="CETeam.CombatExtended">0.45</MeleeCounterParryBonus>
+		</statBases>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.1</cooldownTime>
+				<armorPenetration>0.2</armorPenetration>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<MeleeCritChance MayRequire="CETeam.CombatExtended">0.3</MeleeCritChance>
+			<MeleeParryChance MayRequire="CETeam.CombatExtended">0.3</MeleeParryChance>
+			<MeleeDodgeChance MayRequire="CETeam.CombatExtended">0.25</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension" MayRequire="CETeam.CombatExtended">
+				<DrawOffset>0.1,-0.1</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

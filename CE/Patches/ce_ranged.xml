@@ -1,54 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<!-- ===== Tools ===== -->
+	<!--Melee tools-->
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[
-			defName="TA_SimpleCrossbow"
+			defName="TA_Banzutsu" or
+			defName="TA_Samuraizutsu"
 			]/tools</xpath>
 		<value>
 			<tools>
 				<li Class="CombatExtended.ToolCE">
+					<label>stock</label>
 					<capacities>
 						<li>Blunt</li>
 					</capacities>
-					<power>7</power>
-					<cooldownTime>1.6</cooldownTime>
-					<armorPenetrationBlunt>0.65</armorPenetrationBlunt>
+					<power>8</power>
+					<cooldownTime>1.55</cooldownTime>
+					<chanceFactor>1.5</chanceFactor>
+					<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>barrel</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>2.02</cooldownTime>
+					<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>muzzle</label>
+					<capacities>
+						<li>Poke</li>
+					</capacities>
+					<power>8</power>
+					<cooldownTime>1.55</cooldownTime>
+					<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
 				</li>
 			</tools>
 		</value>
 	</Operation>
 
-	<!-- ===== Simple Crossbow ===== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+			defName="TA_Tanzutsu"
+			]/tools</xpath>
+		<value>
+			<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>grip</label>
+				<capacities>
+				<li>Blunt</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>1.54</cooldownTime>
+				<chanceFactor>1.5</chanceFactor>
+				<armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>muzzle</label>
+				<capacities>
+				<li>Poke</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>1.54</cooldownTime>
+				<armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+			</tools>
+		</value>
+	</Operation>
 
+	<!--Ban-zutsu-->
 	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-		<defName>TA_SimpleCrossbow</defName>
+		<defName>TA_Banzutsu</defName>
 		<statBases>
-			<Bulk>6</Bulk>
-			<SwayFactor>1</SwayFactor>
-			<ShotSpread>0.3</ShotSpread>
-			<SightsEfficiency>0.9</SightsEfficiency>
-			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<WorkToMake>11000</WorkToMake>
+			<Mass>3.8</Mass>
+			<Bulk>10.7</Bulk>
+			<ShotSpread>0.07</ShotSpread>
+			<SwayFactor>1.6</SwayFactor>
+			<SightsEfficiency>0.95</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
 		</statBases>
 		<Properties>
+			<recoilAmount>2.5</recoilAmount>
 			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
-			<hasStandardCommand>True</hasStandardCommand>
-			<defaultProjectile>Projectile_CrossbowBoltWeak_Steel</defaultProjectile>
-			<warmupTime>1</warmupTime>
-			<range>19</range>
-			<soundCast>Bow_Large</soundCast>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_55CalBall525mps</defaultProjectile>
+			<warmupTime>1.4</warmupTime>
+			<range>31</range>
+			<soundCast>Shot_CE_Musket</soundCast>
+			<soundCastTail>GunTail_Light</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
 		</Properties>
 		<AmmoUser>
 			<magazineSize>1</magazineSize>
-			<reloadTime>2.7</reloadTime>
-			<ammoSet>AmmoSet_CrossbowBoltWeak</ammoSet>
+			<reloadTime>7</reloadTime>
+			<AmmoGenPerMagOverride>3</AmmoGenPerMagOverride>
+			<ammoSet>AmmoSet_55CalBall525mps</ammoSet>
 		</AmmoUser>
 		<FireModes>
 			<aiAimMode>AimedShot</aiAimMode>
 		</FireModes>
-		<weaponTags>
-			<li>CE_XBow</li>
+		<weaponTags Inherit="False">
+			<li>NeolithicRangedDecent</li>
+			<li>MedievalRangedAdvanced</li>
+		</weaponTags>
+	</Operation>
+
+	<!--Samurai-zutsu-->
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>TA_Samuraizutsu</defName>
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<Mass>2.7</Mass>
+			<Bulk>8</Bulk>
+			<ShotSpread>0.11</ShotSpread>
+			<SwayFactor>1.11</SwayFactor>
+			<SightsEfficiency>0.93</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>3.44</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_75CalBall370mps</defaultProjectile>
+			<warmupTime>1.1</warmupTime>
+			<range>20</range>
+			<soundCast>Shot_CE_Musket</soundCast>
+			<soundCastTail>GunTail_Light</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>1</magazineSize>
+			<reloadTime>6.5</reloadTime>
+			<ammoSet>AmmoSet_75CalBall370mps</ammoSet>
+			<AmmoGenPerMagOverride>4</AmmoGenPerMagOverride>
+		</AmmoUser>
+		<FireModes>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags Inherit="False">
+			<li>NeolithicRangedDecent</li>
+			<li>MedievalRangedAdvanced</li>
+		</weaponTags>
+	</Operation>
+	
+	<!--Tan-zutsu-->
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>TA_Tanzutsu</defName>
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<Mass>2</Mass>
+			<Bulk>5</Bulk>
+			<ShotSpread>0.16</ShotSpread>
+			<SwayFactor>2.57</SwayFactor>
+			<SightsEfficiency>0.7</SightsEfficiency>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>3.5</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_55CalBall300mps</defaultProjectile>
+			<warmupTime>1.25</warmupTime>
+			<range>12</range>
+			<soundCast>Shot_CE_Musket</soundCast>
+			<soundCastTail>GunTail_Light</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>2</magazineSize>
+			<reloadTime>5.5</reloadTime>
+			<ammoSet>AmmoSet_55CalBall300mps</ammoSet>
+			<AmmoGenPerMagOverride>2</AmmoGenPerMagOverride>
+		</AmmoUser>
+		<FireModes>
+			<aiAimMode>Snapshot</aiAimMode>
+		</FireModes>
+		<weaponTags Inherit="False">
+			<li>NeolithicRangedDecent</li>
+			<li>MedievalRangedAdvanced</li>
 		</weaponTags>
 	</Operation>
       
