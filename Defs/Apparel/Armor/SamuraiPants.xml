@@ -3,7 +3,7 @@
 	<ThingDef ParentName="ApparelMakeableBase" MayRequireAnyOf="al9000.highmedieval,al9000.shiningarmor">
 		<defName>TA_SamuraiPants</defName>
 		<label>samurai pants</label>
-		<description>Thick padded pants.</description>
+		<description>Padded pants.</description>
 		<graphicData>
 			<texPath>Apparel/Armor/TA_SamuraiPants/TA_SamuraiPants_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
