@@ -11,7 +11,7 @@
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.3</drawSize>
 		</graphicData>
-		<equippedAngleOffset>-65</equippedAngleOffset>
+		<equippedAngleOffset>-45</equippedAngleOffset>
 		<techLevel>Medieval</techLevel>
 		<weaponTags Inherit="False">
 			<li>NeolithicMeleeAdvanced</li>
@@ -88,28 +88,20 @@
 			  </li>
 		</tools>
 		<modExtensions>
-			<!--li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<weaponDraftedDrawOffsets>
 					<north>
-						<drawOffset>(0.34,0,0.10)</drawOffset>
-						<angleOffset>-143</angleOffset>
+						<drawOffset>(-0.1,0,0.12)</drawOffset>
+						<angleOffset>0</angleOffset>
 					</north>
-					<east>
-						<drawOffset>(0.15,0,0.10)</drawOffset>
-						<angleOffset>-122</angleOffset>
-					</east>
 					<south>
-						<drawOffset>(-0.34,0,0.10)</drawOffset>
-						<angleOffset>-143</angleOffset>
+						<drawOffset>(0.1,0,0.12)</drawOffset>
+						<angleOffset>0</angleOffset>
 					</south>
-					<west>
-						<drawOffset>(-0.15,0,0.10)</drawOffset>
-						<angleOffset>122</angleOffset>
-					</west>
-				</weaponDraftedDrawOffsets>
-			</li-->
+				</weaponDraftedDrawOffsets>		
+			</li>
 			<li Class="CombatExtended.GunDrawExtension" MayRequire="CETeam.CombatExtended">
-				<DrawOffset>0.25,0.25</DrawOffset>
+				<DrawOffset>0.2,0.2</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>

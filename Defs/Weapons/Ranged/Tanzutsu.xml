@@ -47,7 +47,7 @@
         <li>FueledSmithy</li>
         <li>ElectricSmithy</li>
       </recipeUsers>
-      <researchPrerequisite/>
+      <researchPrerequisite>Vanilla_GunpowderWeaponry</researchPrerequisite>
 	  </recipeMaker>
 	<generateCommonality>0.4</generateCommonality>
 		<statBases>
@@ -91,7 +91,7 @@
 			</li>
 		</tools>
 		<modExtensions>
-			<li Class="CombatExtended.GunDrawExtension">
+			<li Class="CombatExtended.GunDrawExtension" MayRequire="CETeam.CombatExtended">
 				<DrawOffset>0.15,0.0</DrawOffset>
 			</li>
 		</modExtensions>

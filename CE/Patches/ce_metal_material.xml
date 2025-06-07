@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-<!--
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[
                   @Name="TA_AshigaruChestpiece" or
                   defName="TA_SamuraiHarness" or
-                  defName="TA_SamuiraiShoulderPlates" or
+                  defName="TA_SamuraiShoulderPlates" or
                   defName="TA_Jingasa" or
                   defName="TA_Kabuto" or
                   defName="TA_Menpo" or
@@ -34,6 +34,5 @@
 			</stuffCategories>
 		</value>
 	</Operation>
--->
       
 </Patch>

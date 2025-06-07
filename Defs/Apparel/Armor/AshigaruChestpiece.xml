@@ -2,11 +2,11 @@
 <Defs>
 
 	<ThingDef ParentName="ArmorSmithableBase">
-		<defName>TA_AshigaruHarness</defName>
+		<defName>TA_AshigaruChestpiece</defName>
 		<label>hara-ate (chestpiece)</label>
 		<description>Munitions grade chestpiece.</description>
 		<graphicData>
-			<texPath>Apparel/Armor/TA_AshigaruHarness/TA_AshigaruHarness_ico</texPath>
+			<texPath>Apparel/Armor/TA_AshigaruChestpiece/TA_AshigaruChestpiece_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.8</drawSize>
 		</graphicData>
@@ -52,7 +52,7 @@
 				<li>Neck</li>
 				<li>Shoulders</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/Armor/TA_AshigaruHarness/TA_AshigaruHarness</wornGraphicPath>
+			<wornGraphicPath>Apparel/Armor/TA_AshigaruChestpiece/TA_AshigaruChestpiece</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 			</layers>

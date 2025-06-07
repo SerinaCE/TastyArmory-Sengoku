@@ -50,7 +50,7 @@
         <li>FueledSmithy</li>
         <li>ElectricSmithy</li>
       </recipeUsers>
-      <researchPrerequisite/>
+      <researchPrerequisite>Vanilla_GunpowderWeaponry</researchPrerequisite>
     </recipeMaker>
 	<statBases>
 		<WorkToMake>12000</WorkToMake>

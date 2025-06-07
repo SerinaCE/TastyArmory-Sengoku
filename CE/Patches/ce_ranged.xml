@@ -80,9 +80,9 @@
 		<defName>TA_Banzutsu</defName>
 		<statBases>
 			<WorkToMake>11000</WorkToMake>
-			<Mass>3.8</Mass>
+			<Mass>4</Mass>
 			<Bulk>10.7</Bulk>
-			<ShotSpread>0.07</ShotSpread>
+			<ShotSpread>0.08</ShotSpread>
 			<SwayFactor>1.6</SwayFactor>
 			<SightsEfficiency>0.95</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
@@ -93,7 +93,7 @@
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>Bullet_55CalBall525mps</defaultProjectile>
 			<warmupTime>1.4</warmupTime>
-			<range>31</range>
+			<range>33.9</range>
 			<soundCast>Shot_CE_Musket</soundCast>
 			<soundCastTail>GunTail_Light</soundCastTail>
 			<muzzleFlashScale>9</muzzleFlashScale>
@@ -120,7 +120,7 @@
 			<WorkToMake>16000</WorkToMake>
 			<Mass>2.7</Mass>
 			<Bulk>8</Bulk>
-			<ShotSpread>0.11</ShotSpread>
+			<ShotSpread>0.16</ShotSpread>
 			<SwayFactor>1.11</SwayFactor>
 			<SightsEfficiency>0.93</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
@@ -161,14 +161,14 @@
 			<ShotSpread>0.16</ShotSpread>
 			<SwayFactor>2.57</SwayFactor>
 			<SightsEfficiency>0.7</SightsEfficiency>
-			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
 		</statBases>
 		<Properties>
 			<recoilAmount>3.5</recoilAmount>
 			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>Bullet_55CalBall300mps</defaultProjectile>
-			<warmupTime>1.25</warmupTime>
+			<warmupTime>0.9</warmupTime>
 			<range>12</range>
 			<soundCast>Shot_CE_Musket</soundCast>
 			<soundCastTail>GunTail_Light</soundCastTail>
@@ -187,6 +187,56 @@
 			<li>NeolithicRangedDecent</li>
 			<li>MedievalRangedAdvanced</li>
 		</weaponTags>
+	</Operation>
+
+	<!-- ========== Yumi ========== -->
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>TA_Yumi</defName>
+		<statBases>
+			<SightsEfficiency>0.8</SightsEfficiency>
+			<ShotSpread>1</ShotSpread>
+			<SwayFactor>2</SwayFactor>
+			<Bulk>5.00</Bulk>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Projectile_GreatArrow_Steel</defaultProjectile>
+			<warmupTime>1.4</warmupTime>
+			<range>35</range>
+			<soundCast>Bow_Large</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</Properties>
+		<AmmoUser>
+			<ammoSet>AmmoSet_GreatArrow</ammoSet>
+			<AmmoGenPerMagOverride>5</AmmoGenPerMagOverride>
+		</AmmoUser>
+		<FireModes />
+		<weaponTags>
+			<li>CE_Bow</li>
+		</weaponTags>
+		<researchPrerequisite>Greatbow</researchPrerequisite>
+		<AllowWithRunAndGun>false</AllowWithRunAndGun>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="TA_Yumi"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>7</power>
+					<cooldownTime>1.6</cooldownTime>
+					<armorPenetrationBlunt>0.65</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
 	</Operation>
       
 </Patch>

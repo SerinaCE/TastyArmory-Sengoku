@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ==================== Bag ==================== -->
+  <ThingDef ParentName="TA_ApparelCarryGearBase" MayRequire="CETeam.CombatExtended">
+    <defName>TA_RiceBundle</defName>
+    <label>rice rations bundle</label>
+    <description>Rice rations tied into a cloth, draped around neck.</description>
+    <graphicData>
+      <texPath>Apparel/Accessories/TA_RiceBundle/TA_RiceBundle_ico</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>1</Mass>
+      <Bulk MayRequire="CETeam.CombatExtended">2</Bulk>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <CarryBulk MayRequire="CETeam.CombatExtended">10</CarryBulk>
+			<CarryingCapacity>10</CarryingCapacity>
+    </equippedStatOffsets>
+    <costStuffCount>20</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <apparel>
+      <drawData>
+        <defaultData>
+          <layer>28</layer>
+        </defaultData>
+      </drawData>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <wornGraphicPath>Apparel/Accessories/TA_RiceBundle/TA_RiceBundle</wornGraphicPath>
+      <bodyPartGroups>
+        <li>Neck</li>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <tags>
+				<li>Neolithic</li>
+        <li>Medieval</li>
+        <li>MedievalMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+</Defs>

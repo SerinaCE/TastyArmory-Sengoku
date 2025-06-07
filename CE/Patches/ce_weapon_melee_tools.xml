@@ -33,29 +33,29 @@
 	
 	<!--Kanabo-->
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[defName="TA_Ararebo"]/tools</xpath>
+		<xpath>/Defs/ThingDef[defName="TA_Kanabo"]/tools</xpath>
 		<value>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
-				<label>shaft</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>20</power>
-				<cooldownTime>2.3</cooldownTime>
-				<chanceFactor>1.33</chanceFactor>
-				<armorPenetrationBlunt>5</armorPenetrationBlunt>
-				<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
-				<label>shaft</label>
+				<label>handle</label>
 				<capacities>
 					<li>Poke</li>
 				</capacities>
 				<power>8</power>
+				<chanceFactor>0.33</chanceFactor>
 				<cooldownTime>1.7</cooldownTime>
-				<armorPenetrationBlunt>1.26</armorPenetrationBlunt>
-				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+				<armorPenetrationBlunt>8</armorPenetrationBlunt><!-- x0.6 'cause wood -->
+				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>26</power>
+				<cooldownTime>2.3</cooldownTime>
+				<armorPenetrationBlunt>13</armorPenetrationBlunt><!-- x0.6 'cause wood -->
+				<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
 			</li>
 		</tools>
 		</value>
@@ -178,7 +178,7 @@
 					<capacities>
 						<li>Stab</li>
 					</capacities>
-					<power>20</power>
+					<power>23</power>
 					<cooldownTime>1.16</cooldownTime>
 					<chanceFactor>1.165</chanceFactor>
 					<armorPenetrationBlunt>4.025</armorPenetrationBlunt>

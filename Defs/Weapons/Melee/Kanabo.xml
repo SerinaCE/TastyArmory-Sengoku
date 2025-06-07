@@ -20,7 +20,7 @@
 		</stuffCategories>
 		<statBases>
 			<WorkToMake>8000</WorkToMake>
-			<Mass>2.5</Mass>
+			<Mass>4</Mass><!-- x0.6 'cause wood -->
 			<Bulk MayRequire="CETeam.CombatExtended">10</Bulk>
 			<MeleeCounterParryBonus MayRequire="CETeam.CombatExtended">1</MeleeCounterParryBonus>
 		</statBases>

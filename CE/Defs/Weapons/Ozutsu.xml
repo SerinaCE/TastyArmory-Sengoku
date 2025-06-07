@@ -139,7 +139,7 @@
 			</li>
 		</tools>
 		<modExtensions>
-			<li Class="CombatExtended.GunDrawExtension">
+			<li Class="CombatExtended.GunDrawExtension" MayRequire="CETeam.CombatExtended">
 				<DrawOffset>0.05,-0.1</DrawOffset>
 			</li>
 		</modExtensions>

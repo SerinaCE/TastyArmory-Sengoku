@@ -18,23 +18,23 @@
 			</skillRequirements>
 		</recipeMaker>
 		<techLevel>Medieval</techLevel>
-		<costStuffCount>90</costStuffCount>
+		<costStuffCount>95</costStuffCount>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costList>
-			<Cloth>30</Cloth>
+			<Cloth>40</Cloth>
 		</costList>
 		<equippedStatOffsets>
 			<MeleeDodgeChance>-0.05</MeleeDodgeChance>
 		</equippedStatOffsets>
 		<statBases>
 			<MaxHitPoints>270</MaxHitPoints>
-			<WorkToMake>21000</WorkToMake>
+			<WorkToMake>24000</WorkToMake>
 			<Bulk MayRequire="CETeam.CombatExtended">25</Bulk>
 			<WornBulk MayRequire="CETeam.CombatExtended">2</WornBulk>
 			<Mass>7.3</Mass>
-			<StuffEffectMultiplierArmor>2.65</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>2.7</StuffEffectMultiplierArmor>
 			<Insulation_Cold>5</Insulation_Cold>
 			<EquipDelay>5</EquipDelay>
 		</statBases>
@@ -71,13 +71,13 @@
 			<li Class="CombatExtended.PartialArmorExt" MayRequire="CETeam.CombatExtended">
 			<stats>
 				<li>
-					<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+					<ArmorRating_Sharp>0.7</ArmorRating_Sharp>
 					<parts>
 						<li>Leg</li>
 					</parts>
 				</li>
 				<li>
-					<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+					<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
 					<parts>
 						<li>Leg</li>
 					</parts>

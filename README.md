@@ -1,14 +1,16 @@
 # TastyArmory-Sengoku
 
 todo:
-- clothes  
-- kanabo ce melee tools
-- add smoke effects
-- o-zutsu ammoset  projectile speeds and masses
-- resolve smoke fleck not appearing issue
+- guns separate ce-vanilla defs
+- tanto knife style
 
 
 
 later:
-- less silly research assginment (mayrequire CE and patchadd vanilla?)
 - better prices for weapons
+- o-zutsu ammoset  projectile speeds and masses, 
+
+
+
+References:  
+- armor weight: https://shop.samurai-armor.com/glossary/?v=18bd9197cb1d 

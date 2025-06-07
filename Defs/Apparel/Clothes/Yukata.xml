@@ -33,7 +33,7 @@
 		</thingCategories>
 		<apparel>
 			<shellRenderedBehindHead>true</shellRenderedBehindHead>
-			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Shoulders</li>

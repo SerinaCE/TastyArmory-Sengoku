@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--Jingasa-->
+
+	<ThingStyleDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>TA_JingasaCrestTokugawa</defName>
+		<wornGraphicPath>Apparel/Helmets/TA_JingasaCrest/TA_JingasaCrestTokugawa</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_JingasaCrest/TA_JingasaCrestTokugawa_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>TA_JingasaCrestMori</defName>
+		<wornGraphicPath>Apparel/Helmets/TA_JingasaCrest/TA_JingasaCrestMori</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_JingasaCrest/TA_JingasaCrestMori_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>TA_JingasaCrestTakeda</defName>
+		<wornGraphicPath>Apparel/Helmets/TA_JingasaCrest/TA_JingasaCrestTakeda</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_JingasaCrest/TA_JingasaCrestTakeda_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>TA_JingasaCrestUesugi</defName>
+		<wornGraphicPath>Apparel/Helmets/TA_JingasaCrest/TA_JingasaCrestUesugi</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_JingasaCrest/TA_JingasaCrestUesugi_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+  <!--Sashimono-->
+
+	<ThingStyleDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>TA_SashimonoBannerTokugawa</defName>
+		<wornGraphicPath>Apparel/Accessories/TA_SashimonoBanner/TA_SashimonoBannerTokugawa</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Accessories/TA_SashimonoBanner/TA_SashimonoBannerTokugawa_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>TA_SashimonoBannerMori</defName>
+		<wornGraphicPath>Apparel/Accessories/TA_SashimonoBanner/TA_SashimonoBannerMori</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Accessories/TA_SashimonoBanner/TA_SashimonoBannerMori_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>TA_SashimonoBannerTakeda</defName>
+		<wornGraphicPath>Apparel/Accessories/TA_SashimonoBanner/TA_SashimonoBannerTakeda</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Accessories/TA_SashimonoBanner/TA_SashimonoBannerTakeda_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>TA_SashimonoBannerUesugi</defName>
+		<wornGraphicPath>Apparel/Accessories/TA_SashimonoBanner/TA_SashimonoBannerUesugi</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Accessories/TA_SashimonoBanner/TA_SashimonoBannerUesugi_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+</Defs>

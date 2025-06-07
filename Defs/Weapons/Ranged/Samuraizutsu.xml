@@ -51,7 +51,7 @@
         <li>FueledSmithy</li>
         <li>ElectricSmithy</li>
       </recipeUsers>
-      <researchPrerequisite/>
+      <researchPrerequisite>Vanilla_GunpowderWeaponry</researchPrerequisite>
     </recipeMaker>
 	<generateCommonality>0.4</generateCommonality>
 		<statBases>

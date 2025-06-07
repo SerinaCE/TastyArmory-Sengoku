@@ -8,9 +8,9 @@
 		<graphicData>
 			<texPath>Weapons/Melee/TA_Katana</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>0.78</drawSize>
+			<drawSize>0.75</drawSize>
 		</graphicData>
-		<equippedAngleOffset>30</equippedAngleOffset>
+		<equippedAngleOffset>-25</equippedAngleOffset>
 		<techLevel>Medieval</techLevel>
 		<weaponTags Inherit="False">
 			<li>MedievalMeleeDecent</li>
@@ -79,25 +79,8 @@
 			  </li>
 		</tools>
 		<modExtensions>
-			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
-				<weaponDraftedDrawOffsets>
-					<north>
-						<drawOffset>(-0.15,0,-0.2)</drawOffset>
-						<angleOffset>0</angleOffset>
-					</north>
-					<east>
-						<drawOffset>(0.15,0,-0.2)</drawOffset>
-						<angleOffset>0</angleOffset>
-					</east>
-					<south>
-						<drawOffset>(0.15,0,-0.2)</drawOffset>
-						<angleOffset>0</angleOffset>
-					</south>
-					<west>
-						<drawOffset>(-0.15,0,-0.2)</drawOffset>
-						<angleOffset>0</angleOffset>
-					</west>
-				</weaponDraftedDrawOffsets>
+			<li Class="CombatExtended.GunDrawExtension" MayRequire="CETeam.CombatExtended">
+				<DrawOffset>0.15,0.2</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>

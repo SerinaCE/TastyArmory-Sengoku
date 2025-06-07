@@ -33,9 +33,11 @@
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<apparel>
-            <defaultData>
-                <layer>25</layer>
-            </defaultData>
+			<drawData>
+				<defaultData>
+					<layer>28</layer>
+				</defaultData>
+			</drawData>
 			<shellRenderedBehindHead>true</shellRenderedBehindHead>
 			<bodyPartGroups>
 				<li>Shoulders</li>
@@ -43,7 +45,6 @@
 				<li>Neck</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/Armor/TA_SamuraiShoulderPlates/TA_SamuraiShoulderPlates</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
 			</layers>
