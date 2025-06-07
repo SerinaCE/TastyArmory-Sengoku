@@ -5,7 +5,7 @@
   <ThingDef ParentName="BaseMakeableGun">
     <defName>TA_Ozutsu</defName>
     <label>o-zutsu teppo</label>
-    <description>.</description>
+    <description>Hand cannon.</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
       <texPath>Weapons/Ranged/TA_WheellockHandMortar</texPath>

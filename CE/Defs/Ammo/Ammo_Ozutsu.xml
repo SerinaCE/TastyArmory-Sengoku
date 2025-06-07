@@ -53,6 +53,18 @@
 			<suppressionFactor>1.0</suppressionFactor>
 			<dangerFactor>1.0</dangerFactor>
 		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ProjectileFleck">
+				<FleckDatas>
+					<li>
+						<fleck>Fleck_CERocketSmoke</fleck>
+						<emissionsPerTick>3</emissionsPerTick>
+						<flecksPerEmission>5</flecksPerEmission>
+						<cutoffTickRange>1~2</cutoffTickRange>
+					</li>
+				</FleckDatas>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBulletCE">
@@ -71,6 +83,39 @@
 			<armorPenetrationBlunt>20.7</armorPenetrationBlunt>
 			<spreadMult>17.8</spreadMult>
 		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ProjectileFleck">
+				<FleckDatas>
+					<li>
+						<fleck>Fleck_CERocketSmoke</fleck>
+						<emissionsPerTick>3</emissionsPerTick>
+						<flecksPerEmission>5</flecksPerEmission>
+						<cutoffTickRange>1~2</cutoffTickRange>
+					</li>
+					
+					<li>
+						<fleck>Fleck_CERocketFlame</fleck>
+						<emissionsPerTick>7</emissionsPerTick>
+						<flecksPerEmission>1</flecksPerEmission>
+						<cutoffTickRange>60~120</cutoffTickRange>
+					</li>
+					<li>
+						<fleck>Fleck_CERocketSmokeTrail</fleck>
+						<emissionsPerTick>0.5</emissionsPerTick>
+						<rotation>0~360</rotation>
+						<scale>2</scale>
+						<flecksPerEmission>1</flecksPerEmission>
+					</li>
+					<li>
+						<fleck>Fleck_CERocketSmoke</fleck>
+						<emissionsPerTick>0.5</emissionsPerTick>
+						<rotation>0~360</rotation>
+						<flecksPerEmission>1</flecksPerEmission>
+						<cutoffTickRange>120~240</cutoffTickRange>
+					</li>
+				</FleckDatas>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHandMortarIndirect">
@@ -87,7 +132,7 @@
 			<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
 			<preExplosionSpawnChance>0.25</preExplosionSpawnChance>
 			<soundExplode>MortarIncendiary_Explode</soundExplode>
-			<gravityFactor>8</gravityFactor><!--<<<<<<<<<<<<<<<< -->
+			<gravityFactor>6</gravityFactor><!--<<<<<<<<<<<<<<<< -->
 		</projectile>
 	</ThingDef>
 

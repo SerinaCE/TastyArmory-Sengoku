@@ -22,7 +22,7 @@
   <ThingDef ParentName="BaseMakeableGun">
     <defName>TA_Samuraizutsu</defName>
     <label>samurai-zutsu</label>
-    <description>.</description>
+    <description>Cavalry carbine.</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
       <texPath>Weapons/Ranged/TA_Samuraizutsu</texPath>

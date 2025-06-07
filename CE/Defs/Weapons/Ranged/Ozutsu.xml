@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BaseMakeableGun">
 		<defName>TA_Ozutsu</defName>
 		<label>o-zutsu</label>
-		<description>Hand cannon, (CE:) ball (increased structure dmg), shot, incendiary rockets (inidrect) .</description>
+		<description>Hand cannon, (CE:) ball (increased structure dmg), shot, incendiary rockets (secondary) .</description>
 		<techLevel>Medieval</techLevel>
 		<graphicData>
 			<texPath>Weapons/Ranged/TA_Ozutsu</texPath>
@@ -65,7 +65,7 @@
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>1</magazineSize>
 				<AmmoGenPerMagOverride>2</AmmoGenPerMagOverride>
-				<reloadTime>8.3</reloadTime>
+				<reloadTime>8.5</reloadTime>
 				<ammoSet>AmmoSet_Ozutsu_direct</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
@@ -80,10 +80,10 @@
 					<verbClass>CombatExtended.Verb_ShootFlareCE</verbClass>
 					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 					<hasStandardCommand>true</hasStandardCommand>
-					<defaultProjectile>Bullet_Flare</defaultProjectile>
+					<defaultProjectile>Bullet_TA_BoHiya</defaultProjectile>
 					<warmupTime>8</warmupTime>
 					<range>65</range>
-					<soundCast>InfernoCannon_Fire</soundCast>
+					<soundCast>Shot_IncendiaryLauncher</soundCast>
 					<muzzleFlashScale>16</muzzleFlashScale>
 					<circularError>2</circularError>
 					<indirectFirePenalty>0.5</indirectFirePenalty>
@@ -93,7 +93,7 @@
 				</verbPropsUnderBarrel>
 				<propsFireModesUnderBarrel>
 					<aiUseBurstMode>FALSE</aiUseBurstMode>
-					<aiAimMode>Snapshot</aiAimMode>
+					<aiAimMode>AimedShot</aiAimMode>
 					<aimedBurstShotCount>1</aimedBurstShotCount>
 				</propsFireModesUnderBarrel>
 			</li>

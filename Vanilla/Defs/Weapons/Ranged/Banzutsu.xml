@@ -20,7 +20,7 @@
   <ThingDef ParentName="BaseMakeableGun">
     <defName>TA_Banzutsu</defName>
     <label>ban-zutsu</label>
-    <description>.</description>
+    <description>Infantry arquebus.</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
       <texPath>Weapons/Ranged/TA_Banzutsu</texPath>
