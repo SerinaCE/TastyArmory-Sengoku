@@ -14,6 +14,10 @@
         <thingDef>TA_SashimonoBanner</thingDef>
         <styleDef>TA_SashimonoBannerTokugawa</styleDef>
       </li>
+      <li>
+        <thingDef>MeleeWeapon_Knife</thingDef>
+        <styleDef>TA_Tanto</styleDef>
+      </li>
 		</thingDefStyles>
   </StyleCategoryDef>
 
@@ -29,6 +33,10 @@
       <li>
         <thingDef>TA_SashimonoBanner</thingDef>
         <styleDef>TA_SashimonoBannerMori</styleDef>
+      </li>
+      <li>
+        <thingDef>MeleeWeapon_Knife</thingDef>
+        <styleDef>TA_Tanto</styleDef>
       </li>
 		</thingDefStyles>
   </StyleCategoryDef>
@@ -46,6 +54,10 @@
         <thingDef>TA_SashimonoBanner</thingDef>
         <styleDef>TA_SashimonoBannerTakeda</styleDef>
       </li>
+      <li>
+        <thingDef>MeleeWeapon_Knife</thingDef>
+        <styleDef>TA_Tanto</styleDef>
+      </li>
 		</thingDefStyles>
   </StyleCategoryDef>
 
@@ -61,6 +73,10 @@
       <li>
         <thingDef>TA_SashimonoBanner</thingDef>
         <styleDef>TA_SashimonoBannerUesugi</styleDef>
+      </li>
+      <li>
+        <thingDef>MeleeWeapon_Knife</thingDef>
+        <styleDef>TA_Tanto</styleDef>
       </li>
 		</thingDefStyles>
   </StyleCategoryDef>

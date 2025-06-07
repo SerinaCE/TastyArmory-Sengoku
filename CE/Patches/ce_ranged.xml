@@ -162,6 +162,7 @@
 			<li>NeolithicRangedDecent</li>
 			<li>MedievalRangedAdvanced</li>
 		</weaponTags>
+		<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
 	</Operation>
 
 	<!--Samurai-zutsu-->
@@ -200,6 +201,7 @@
 			<li>NeolithicRangedDecent</li>
 			<li>MedievalRangedAdvanced</li>
 		</weaponTags>
+		<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
 	</Operation>
 	
 	<!--Tan-zutsu-->
@@ -239,6 +241,7 @@
 			<li>NeolithicRangedDecent</li>
 			<li>MedievalRangedAdvanced</li>
 		</weaponTags>
+		<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
 	</Operation>
       
 </Patch>

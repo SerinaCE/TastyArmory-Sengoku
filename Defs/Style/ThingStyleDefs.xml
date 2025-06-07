@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	
+  <!--Tanto-->
+
+	<ThingStyleDef>
+		<defName>TA_Tanto</defName>
+		<overrideLabel>tanto</overrideLabel>
+		<graphicData>
+			<texPath>Weapons/Melee/TA_Tanto</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 
   <!--Jingasa-->
 
