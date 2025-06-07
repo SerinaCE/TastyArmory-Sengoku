@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+	<ThingDef ParentName="BaseBullet">
+		<defName>TA_Bullet_Ozutsu</defName>
+		<label>o-zutsu bullet</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+			<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<stoppingPower>5</stoppingPower>
+			<armorPenetrationBase>0.6</armorPenetrationBase>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+			
 	<!--wheellock hand mortar-->
   <ThingDef ParentName="BaseMakeableGun">
     <defName>TA_Ozutsu</defName>
@@ -25,8 +41,6 @@
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
     <weaponTags>
-      <li>Gun</li>
-      <li>SimpleGun</li>
       <li>NeolithicRangedHeavy</li>
       <li>NeolithicRangedChief</li>
     </weaponTags>
@@ -51,9 +65,9 @@
 		<li>
 			<verbClass>Verb_Shoot</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>Proj_GrenadeFrag</defaultProjectile>
-			<warmupTime>5</warmupTime>
-			<range>30.9</range>
+			<defaultProjectile>TA_Bullet_Ozutsu</defaultProjectile>
+			<warmupTime>3.5</warmupTime>
+			<range>23.9</range>
 			<forcedMissRadius>1.9</forcedMissRadius>
 			<burstShotCount>1</burstShotCount>
 			<soundCast>Shot_IncendiaryLauncher</soundCast>

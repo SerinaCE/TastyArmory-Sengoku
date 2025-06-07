@@ -60,6 +60,7 @@
 			<li Class="CombatExtended.CompProperties_ProjectileFleck">
 				<FleckDatas>
 					<li>
+						<startDelayTick>-1</startDelayTick>
 						<fleck>Fleck_CERocketSmoke</fleck>
 						<emissionsPerTick>3</emissionsPerTick>
 						<flecksPerEmission>5</flecksPerEmission>
@@ -90,9 +91,10 @@
 			<li Class="CombatExtended.CompProperties_ProjectileFleck">
 				<FleckDatas>
 					<li>
+						<startDelayTick>-1</startDelayTick>
 						<fleck>Fleck_CERocketSmoke</fleck>
-						<emissionsPerTick>3</emissionsPerTick>
-						<flecksPerEmission>5</flecksPerEmission>
+						<emissionsPerTick>2</emissionsPerTick>
+						<flecksPerEmission>1</flecksPerEmission>
 						<cutoffTickRange>1~2</cutoffTickRange>
 					</li>
 				</FleckDatas>

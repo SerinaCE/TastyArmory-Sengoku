@@ -37,8 +37,6 @@
       <WoodLog>10</WoodLog>
     </costList>
     <weaponTags>
-      <li>Gun</li>
-      <li>SimpleGun</li>
       <li>NeolithicRangedHeavy</li>
       <li>NeolithicRangedChief</li>
     </weaponTags>
