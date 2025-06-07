@@ -228,6 +228,7 @@
 		<AmmoUser>
 			<magazineSize>2</magazineSize>
 			<reloadTime>5.5</reloadTime>
+			<reloadOneAtATime>true</reloadOneAtATime>
 			<ammoSet>AmmoSet_55CalBall300mps</ammoSet>
 			<AmmoGenPerMagOverride>4</AmmoGenPerMagOverride>
 		</AmmoUser>
