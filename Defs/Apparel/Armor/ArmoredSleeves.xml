@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	<ThingDef ParentName="ApparelMakeableBase" MayRequireAnyOf="al9000.highmedieval,al9000.shiningarmor">
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>TA_ArmoredSleeves</defName>
 		<label>Kote (armored sleeves)</label>
 		<description>Padded sleeves reinforced with small plates and maille.</description>

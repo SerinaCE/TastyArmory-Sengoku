@@ -61,7 +61,22 @@
 				<li>Worker</li>
 			</defaultOutfitTags>
 		</apparel>
-		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<colorGenerator Class="ColorGenerator_Options">
+		<options>
+			<li>
+			<weight>1</weight>
+			<only>(0.75,0.63,0.44)</only>
+			</li>
+			<li>
+			<weight>1</weight>
+			<only>(0.72,0.63,0.48)</only>
+			</li>
+			<li>
+			<weight>1</weight>
+			<only>(0.82,0.74,0.54)</only>
+			</li>
+		</options>
+		</colorGenerator>
 		<tradeTags>
 			<li>BasicClothing</li>
 		</tradeTags>

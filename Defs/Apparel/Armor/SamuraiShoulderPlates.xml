@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	<ThingDef ParentName="ApparelMakeableBase" MayRequireAnyOf="al9000.highmedieval,al9000.shiningarmor">
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>TA_SamuraiShoulderPlates</defName>
 		<label>Sode (shoulder armor)</label>
 		<description>Lamellar shoulder armor.</description>

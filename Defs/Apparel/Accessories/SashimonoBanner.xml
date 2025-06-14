@@ -42,13 +42,8 @@
 				<li>Belt</li>
 				<li MayRequire="CETeam.CombatExtended">Backpack</li>
 			</layers>
-			<tags>
-				<li>MedievalArmorAdvanced</li>
-				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
-				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
-				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
-				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
-				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier7</li>
+			<tags Inherit="False">
+				<li>Blank</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>

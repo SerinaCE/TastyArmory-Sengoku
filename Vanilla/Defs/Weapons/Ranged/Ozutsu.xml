@@ -10,7 +10,7 @@
 		</graphicData>
 			<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>40</damageAmountBase>
+			<damageAmountBase>45</damageAmountBase>
 			<stoppingPower>5</stoppingPower>
 			<armorPenetrationBase>0.6</armorPenetrationBase>
 			<speed>55</speed>
@@ -68,7 +68,6 @@
 			<defaultProjectile>TA_Bullet_Ozutsu</defaultProjectile>
 			<warmupTime>3.5</warmupTime>
 			<range>23.9</range>
-			<forcedMissRadius>1.9</forcedMissRadius>
 			<burstShotCount>1</burstShotCount>
 			<soundCast>Shot_IncendiaryLauncher</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
