@@ -2,7 +2,7 @@
 <Defs>
 
   <!-- ==================== Bag ==================== -->
-  <ThingDef ParentName="TA_ApparelCarryGearBase" MayRequire="CETeam.CombatExtended">
+  <ThingDef ParentName="TA_ApparelCarryGearBase">
     <defName>TA_RiceBundle</defName>
     <label>rice rations bundle</label>
     <description>Rice rations tied into a cloth, draped around neck.</description>

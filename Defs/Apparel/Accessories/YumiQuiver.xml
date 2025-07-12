@@ -2,7 +2,7 @@
 <Defs>
 
 	<!--Quiver-->
-	<ThingDef ParentName="TA_ApparelCarryGearBase" MayRequire="CETeam.CombatExtended">
+	<ThingDef ParentName="TA_ApparelCarryGearBase">
 		<defName>TA_YumiQuiver</defName>
 		<label>yumi arrow quiver</label>
 		<description>.</description>

@@ -24,7 +24,7 @@
     <description>Hand cannon.</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
-      <texPath>Weapons/Ranged/TA_WheellockHandMortar</texPath>
+      <texPath>Weapons/Ranged/TA_Ozutsu</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1</drawSize>
     </graphicData>

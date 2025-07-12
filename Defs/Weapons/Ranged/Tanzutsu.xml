@@ -61,7 +61,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>TA_Bullet_WheellockPistol</defaultProjectile>
+				<defaultProjectile>TA_Bullet_Tanzutsu</defaultProjectile>
 				<warmupTime>0.9</warmupTime>
 				<range>18.9</range>
 				<soundCast>Shot_Revolver</soundCast>

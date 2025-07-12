@@ -41,7 +41,6 @@
 				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/Armor/TA_SamuraiPants/TA_SamuraiPants</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>TA_UnderArmor</li>
 			</layers>
