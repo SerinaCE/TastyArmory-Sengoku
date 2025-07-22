@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--Quiver-->
+	<ThingDef ParentName="TA_ApparelCarryGearBase">
+		<defName>TA_YumiQuiver</defName>
+		<label>yumi arrow quiver</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Accessories/TA_YumiQuiver/TA_YumiQuiver_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>RecurveBow</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>1</Mass>
+			<Bulk MayRequire="CETeam.CombatExtended">5</Bulk>
+			<WornBulk MayRequire="CETeam.CombatExtended">0</WornBulk>
+			<EquipDelay>3.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryBulk MayRequire="CETeam.CombatExtended">15</CarryBulk>
+			<CarryingCapacity>15</CarryingCapacity>
+		</equippedStatOffsets>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costList>
+			<WoodLog>10</WoodLog>
+		</costList>
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>31</layer>
+				</defaultData>
+			</drawData>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<wornGraphicPath>Apparel/Accessories/TA_YumiQuiver/TA_YumiQuiver</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<tags>
+				<li>Neolithic</li>
+				<li>MedievalMilitary</li>
+				<li>MedievalArmorDecent</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+</Defs>

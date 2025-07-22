@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>TA_SamuraiPants</defName>
+		<label>samurai pants</label>
+		<description>Padded pants.</description>
+		<graphicData>
+			<texPath>Apparel/Armor/TA_SamuraiPants/TA_SamuraiPants_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>55</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<equippedStatOffsets></equippedStatOffsets>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>9000</WorkToMake>
+			<Bulk MayRequire="CETeam.CombatExtended">15</Bulk>
+			<WornBulk MayRequire="CETeam.CombatExtended">3</WornBulk>
+			<Mass>1.2</Mass>
+			<StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp MayRequire="CETeam.CombatExtended">0.6</ArmorRating_Sharp>
+			<ArmorRating_Blunt MayRequire="CETeam.CombatExtended">1</ArmorRating_Blunt>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+			<shellRenderedBehindHead>true</shellRenderedBehindHead>
+			<bodyPartGroups>
+				<li>Waist</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Armor/TA_SamuraiPants/TA_SamuraiPants</wornGraphicPath>
+			<layers>
+				<li>TA_UnderArmor</li>
+			</layers>
+			<tags>
+        <li>Neolithic</li>
+				<li>MedievalMilitary</li>
+				<li>MedievalArmorBasic</li>
+				<li>MedievalArmorDecent</li>
+				<li>MedievalArmorAdvanced</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier7</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>Clothing</li>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

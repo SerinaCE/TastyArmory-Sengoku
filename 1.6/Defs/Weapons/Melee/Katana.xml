@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>TA_Katana</defName>
+		<label>katana</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Weapons/Melee/TA_Katana</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<equippedAngleOffset>-25</equippedAngleOffset>
+		<techLevel>Medieval</techLevel>
+		<weaponTags Inherit="False">
+			<li>MedievalMeleeDecent</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<recipeMaker>
+			<recipeUsers>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>LongBlades</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<relicChance>1.5</relicChance>
+		<statBases>
+			<WorkToMake>18500</WorkToMake> <!-- need testing /!\ -->
+			<Mass>1.1</Mass>
+			<Bulk MayRequire="CETeam.CombatExtended">8</Bulk>
+			<MeleeCounterParryBonus MayRequire="CETeam.CombatExtended">0.8</MeleeCounterParryBonus>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeCritChance MayRequire="CETeam.CombatExtended">0.5</MeleeCritChance>
+			<MeleeParryChance MayRequire="CETeam.CombatExtended">0.6</MeleeParryChance>
+			<MeleeDodgeChance MayRequire="CETeam.CombatExtended">0.4</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>WeaponMelee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			 <li>
+				<label>point</label>
+				<capacities>
+				  <li>Stab</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>1.55</cooldownTime>
+			  </li>
+			  <li>
+				<label>edge</label>
+				<capacities>
+				  <li>Cut</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>2.1</cooldownTime>
+			  </li>
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension" MayRequire="CETeam.CombatExtended">
+				<DrawOffset>0.15,0.2</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

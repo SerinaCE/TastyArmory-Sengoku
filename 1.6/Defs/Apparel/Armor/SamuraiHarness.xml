@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ArmorSmithableBase">
+		<defName>TA_SamuraiHarness</defName>
+		<label>Samurai Do (chestpiece+leg armor)</label>
+		<description>Samurai chest piece and leg armor, good flexible protection protection.</description>
+		<graphicData>
+			<texPath>Apparel/Armor/TA_SamuraiHarness/TA_SamuraiHarness_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>95</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<Cloth>40</Cloth>
+		</costList>
+		<equippedStatOffsets>
+			<MeleeDodgeChance>-0.05</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<statBases>
+			<MaxHitPoints>270</MaxHitPoints>
+			<WorkToMake>24000</WorkToMake>
+			<Bulk MayRequire="CETeam.CombatExtended">25</Bulk>
+			<WornBulk MayRequire="CETeam.CombatExtended">2</WornBulk>
+			<Mass>7.3</Mass>
+			<StuffEffectMultiplierArmor>2.7</StuffEffectMultiplierArmor>
+			<Insulation_Cold>5</Insulation_Cold>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>23</layer>
+				</defaultData>
+			</drawData>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Armor/TA_SamuraiHarness/TA_SamuraiHarness</wornGraphicPath>
+			<layers>
+			<li>Middle</li>
+			</layers>
+			<tags>
+				<li>MedievalArmorAdvanced</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier7</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<modExtensions>
+			<li Class="CombatExtended.PartialArmorExt" MayRequire="CETeam.CombatExtended">
+			<stats>
+				<li>
+					<ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+					<parts>
+						<li>Leg</li>
+					</parts>
+				</li>
+				<li>
+					<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+					<parts>
+						<li>Leg</li>
+					</parts>
+				</li>
+			</stats>
+			</li>
+		</modExtensions>
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+	
+</Defs>
