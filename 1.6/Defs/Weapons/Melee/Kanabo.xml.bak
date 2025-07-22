@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>TA_Kanabo</defName>
+		<label>kanabo</label>
+		<description>.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Weapons/Melee/TA_Kanabo</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>4</Mass><!-- x0.6 'cause wood -->
+			<Bulk MayRequire="CETeam.CombatExtended">10</Bulk>
+			<MeleeCounterParryBonus MayRequire="CETeam.CombatExtended">1</MeleeCounterParryBonus>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeCritChance MayRequire="CETeam.CombatExtended">0.25</MeleeCritChance>
+			<MeleeParryChance MayRequire="CETeam.CombatExtended">0.4</MeleeParryChance>
+			<MeleeDodgeChance MayRequire="CETeam.CombatExtended">0.3</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+		</weaponClasses>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+				<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+				<li>Blunt</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(-0.1,0,0.12)</drawOffset>
+						<angleOffset>0</angleOffset>
+					</north>
+					<south>
+						<drawOffset>(0.1,0,0.12)</drawOffset>
+						<angleOffset>0</angleOffset>
+					</south>
+				</weaponDraftedDrawOffsets>		
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

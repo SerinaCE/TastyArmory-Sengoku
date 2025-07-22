@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="TA_ApparelCarryGearBase">
+		<defName>TA_SashimonoBanner</defName>
+		<label>sashimono banner</label>
+		<description>.</description>
+		<techLevel>Medieval</techLevel>
+		<graphicData>
+			<texPath>Apparel/Accessories/TA_SashimonoBanner/TA_SashimonoBanner_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>1</Mass>
+			<Bulk MayRequire="CETeam.CombatExtended">8</Bulk>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryBulk MayRequire="CETeam.CombatExtended">10</CarryBulk>
+			<Suppressability MayRequire="CETeam.CombatExtended">-0.5</Suppressability>
+			<PainShockThreshold>0.1</PainShockThreshold>
+		</equippedStatOffsets>
+		<costList>
+			<WoodLog>15</WoodLog>
+			<Cloth>35</Cloth>
+		</costList>
+		<apparel>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<careIfDamaged>false</careIfDamaged>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers Inherit="False">
+				<li>Belt</li>
+				<li MayRequire="CETeam.CombatExtended">Backpack</li>
+			</layers>
+			<tags Inherit="False">
+				<li>Blank</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Apparel/Accessories/TA_SashimonoBanner/TA_SashimonoBanner</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<wornGraphicData>
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<east>
+					<offset>(0,-0.05)</offset>
+					<thin>
+						<offset>(0.2,0)</offset>
+					</thin>
+					<hulk>
+						<offset>(0,0)</offset>
+					</hulk>
+					<fat>
+						<offset>(0,0)</offset>
+					</fat>
+					<male>
+						<offset>(0.125,0)</offset>
+					</male>
+					<female>
+						<offset>(0.125,0)</offset>
+					</female>
+				</east>
+				<west>
+					<offset>(0,-0.05)</offset>
+					<thin>
+						<offset>(-0.2,0)</offset>
+					</thin>
+					<hulk>
+						<offset>(0,0)</offset>
+					</hulk>
+					<fat>
+						<offset>(0,0)</offset>
+					</fat>
+					<male>
+						<offset>(-0.125,0)</offset>
+					</male>
+					<female>
+						<offset>(-0.125,0)</offset>
+					</female>
+				</west>
+				<north>
+					<offset>(0,-0.1)</offset>
+					<thin>
+						<offset>(0,0)</offset>
+					</thin>
+					<hulk>
+						<offset>(0,-0.05)</offset>
+					</hulk>
+					<fat>
+						<offset>(0,-0.05)</offset>
+					</fat>
+				</north>
+				<male>
+					<scale>(1,1)</scale>
+				</male>
+				<female>
+					<scale>(1,1)</scale>
+				</female>
+				<thin>
+					<scale>(0.9,0.95)</scale>
+				</thin>
+				<hulk>
+					<scale>(1.25,1.25)</scale>
+				</hulk>
+				<fat>
+					<scale>(1.15,1.15)</scale>
+				</fat>
+			</wornGraphicData>
+			<drawData>
+				<defaultData>
+					<layer>28</layer>
+					<offset>(0,0,0.25)</offset>
+				</defaultData>
+				<dataNorth>
+					<layer>90</layer>
+				</dataNorth>
+				<dataSouth>
+					<layer>0</layer>
+				</dataSouth>
+			</drawData>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+</Defs>

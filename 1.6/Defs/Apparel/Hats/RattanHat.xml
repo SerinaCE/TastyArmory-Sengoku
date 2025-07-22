@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingStyleDef>
+		<defName>TA_RattanHat_sandogasa</defName>
+		<wornGraphicPath>Apparel/Hats/TA_RattanHat/TA_RattanHat_sandogasa</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Hats/TA_RattanHat/TA_RattanHat_sandogasa_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>TA_RattanHat</defName>
+		<label>rattan hat</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Hats/TA_RattanHat/TA_RattanHat_cone_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<randomStyleChance>0.25</randomStyleChance>
+		<randomStyle>
+			<li>
+				<styleDef>TA_RattanHat_sandogasa</styleDef>
+			</li>
+		</randomStyle>
+		<costList>
+			<WoodLog>20</WoodLog>
+		</costList>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.25</Mass>
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+			<StuffEffectMultiplierInsulation_Cold>0.65</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Hats/TA_RattanHat/TA_RattanHat_cone</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Neolithic</li>
+				<li>Medieval</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+		<options>
+			<li>
+			<weight>1</weight>
+			<only>(0.75,0.63,0.44)</only>
+			</li>
+			<li>
+			<weight>1</weight>
+			<only>(0.72,0.63,0.48)</only>
+			</li>
+			<li>
+			<weight>1</weight>
+			<only>(0.82,0.74,0.54)</only>
+			</li>
+		</options>
+		</colorGenerator>
+		<tradeTags>
+			<li>BasicClothing</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

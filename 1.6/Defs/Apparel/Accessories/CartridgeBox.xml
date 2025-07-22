@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="TA_ApparelCarryGearBase">
+		<defName>TA_CartridgeBox</defName>
+		<label>cartridge box</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Accessories/TA_CartridgeBox/TA_CartridgeBox_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<MaxHitPoints>70</MaxHitPoints>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.6</Mass>
+			<Bulk MayRequire="CETeam.CombatExtended">1</Bulk>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ReloadSpeed MayRequire="CETeam.CombatExtended">0.1</ReloadSpeed>
+			<CarryBulk MayRequire="CETeam.CombatExtended">12</CarryBulk>
+			<CarryingCapacity>10</CarryingCapacity>
+		</equippedStatOffsets>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costList>
+			<WoodLog>15</WoodLog>
+		</costList>
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>27</layer>
+				</defaultData>
+			</drawData>
+			<wornGraphicPath>Apparel/Accessories/TA_CartridgeBox/TA_CartridgeBox</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<tags>
+				<li>Medieval</li>
+				<li>MedievalMilitary</li>
+				<li>MedievalArmorDecent</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+</Defs>

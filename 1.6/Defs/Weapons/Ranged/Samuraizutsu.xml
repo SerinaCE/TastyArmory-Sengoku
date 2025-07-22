@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <!-- ==================== Flintlock Blunderbuss ==================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>TA_Bullet_Samuraizutsu</defName>
+		<label>samurai-zutsu bullet</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+			<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>22</damageAmountBase>
+			<stoppingPower>2.5</stoppingPower>
+			<armorPenetrationBase>0.3</armorPenetrationBase>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+			
+  <ThingDef ParentName="BaseMakeableGun">
+    <defName>TA_Samuraizutsu</defName>
+    <label>samurai-zutsu</label>
+    <description>Cavalry carbine.</description>
+    <techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Weapons/Ranged/TA_Samuraizutsu</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.0</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
+    <costList>
+      <Steel>50</Steel>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+      <li>NeolithicRangedChief</li>
+    </weaponTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>FueledSmithy</li>
+        <li>ElectricSmithy</li>
+      </recipeUsers>
+      <researchPrerequisite>Vanilla_GunpowderWeaponry</researchPrerequisite>
+    </recipeMaker>
+	<generateCommonality>0.4</generateCommonality>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>2.5</Mass>
+			<AccuracyTouch>0.70</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>3.6</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>TA_Bullet_Samuraizutsu</defaultProjectile>
+				<warmupTime>1.1</warmupTime>
+				<range>24</range>
+				<soundCast>Shot_Shotgun</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension" MayRequire="CETeam.CombatExtended">
+				<DrawOffset>0.05,0.08</DrawOffset>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="TA_ApparelCarryGearBase">
+		<defName>TA_KatanaBelt</defName>
+		<label>sword pair belt</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Accessories/TA_KatanaBelt/TA_KatanaBelt_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.7</Mass>
+			<Bulk MayRequire="CETeam.CombatExtended">1</Bulk>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.15</SocialImpact>
+			<CarryBulk  MayRequire="CETeam.CombatExtended">16</CarryBulk>
+			<CarryingCapacity>16</CarryingCapacity>
+		</equippedStatOffsets>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costList>
+			<WoodLog>15</WoodLog>
+		</costList>
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>26</layer>
+				</defaultData>
+			</drawData>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<bodyPartGroups>
+				<li>Waist</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<tags>
+				<li>MedievalArmorDecent</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier7</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<wornGraphicPath>Apparel/Accessories/TA_KatanaBelt/TA_KatanaBelt</wornGraphicPath>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+</Defs>

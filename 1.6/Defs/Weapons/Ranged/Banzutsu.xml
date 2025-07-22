@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>TA_Bullet_Banzutsu</defName>
+		<label>musket bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>22</damageAmountBase>
+			<stoppingPower>3</stoppingPower>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+
+  <ThingDef ParentName="BaseMakeableGun">
+    <defName>TA_Banzutsu</defName>
+    <label>ban-zutsu</label>
+    <description>Infantry arquebus.</description>
+    <techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Weapons/Ranged/TA_Banzutsu</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.0</drawSize>
+    </graphicData>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <weaponClasses>
+      <li>LongShots</li>
+    </weaponClasses>
+    <costList>
+		<Steel>55</Steel>
+		<WoodLog>12</WoodLog>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+      <li>NeolithicRangedChief</li>
+    </weaponTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>FueledSmithy</li>
+        <li>ElectricSmithy</li>
+      </recipeUsers>
+      <researchPrerequisite>Vanilla_GunpowderWeaponry</researchPrerequisite>
+    </recipeMaker>
+	<statBases>
+		<WorkToMake>12000</WorkToMake>
+		<Mass>4</Mass>
+		<AccuracyTouch>0.75</AccuracyTouch>
+		<AccuracyShort>0.7</AccuracyShort>
+		<AccuracyMedium>0.55</AccuracyMedium>
+		<AccuracyLong>0.4</AccuracyLong>
+		<RangedWeapon_Cooldown>3.8</RangedWeapon_Cooldown>
+	</statBases>
+	<generateCommonality>0.4</generateCommonality>
+	<verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>TA_Bullet_Banzutsu</defaultProjectile>
+			<warmupTime>1.5</warmupTime>
+			<range>32.9</range>
+			<soundCast>Shot_Revolver</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</li>
+	</verbs>
+	<tools>
+		<li>
+			<label>stock</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>2</cooldownTime>
+		</li>
+		<li>
+			<label>barrel</label>
+			<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+			</capacities>
+			<power>8</power>
+			<cooldownTime>2</cooldownTime>
+		</li>
+	</tools>
+	<modExtensions>
+		<li Class="CombatExtended.GunDrawExtension" MayRequire="CETeam.CombatExtended">
+			<DrawOffset>0.0,0.15</DrawOffset>
+		</li>
+	</modExtensions>
+  </ThingDef>
+
+</Defs>

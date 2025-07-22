@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="ApparelMakeableBase" Name="TA_Kimono_base">
+		<defName>TA_Kimono</defName>
+		<label>kimono</label>
+		<description>Cold weather dress.</description>
+		<graphicData>
+			<texPath>Apparel/Clothes/TA_Kimono/TA_Kimono_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>6500</WorkToMake>
+			<Mass>1</Mass>
+			<StuffEffectMultiplierArmor>2.5</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.4</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
+		<apparel>
+			<shellRenderedBehindHead>true</shellRenderedBehindHead>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Clothes/TA_Kimono/TA_Kimono</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>				
+				<li>Neolithic</li>
+				<li>Medieval</li>
+				<li>MedievalMilitary</li>
+				<li>MedievalArmorBasic</li>
+				<li>MedievalArmorDecent</li>
+				<li>MedievalArmorAdvanced</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier7</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>BasicClothing</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>
