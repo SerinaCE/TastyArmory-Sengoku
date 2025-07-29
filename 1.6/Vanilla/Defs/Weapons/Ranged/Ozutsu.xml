@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>TA_Bullet_Ozutsu</defName>
+		<label>o-zutsu bullet</label>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+			<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>45</damageAmountBase>
+			<stoppingPower>5</stoppingPower>
+			<armorPenetrationBase>0.6</armorPenetrationBase>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+			
+	<!--wheellock hand mortar-->
+  <ThingDef ParentName="BaseMakeableGun">
+    <defName>TA_Ozutsu</defName>
+    <label>o-zutsu teppo</label>
+    <description>Hand cannon.</description>
+    <techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Weapons/Ranged/TA_Ozutsu</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>LongShots</li>
+    </weaponClasses>
+    <costList>
+		<Steel>80</Steel>
+		<WoodLog>15</WoodLog>
+		<Chemfuel>80</Chemfuel>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+      <li>NeolithicRangedChief</li>
+    </weaponTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>FueledSmithy</li>
+        <li>ElectricSmithy</li>
+      </recipeUsers>
+      <researchPrerequisite>Vanilla_GunpowderWeaponry</researchPrerequisite>
+    </recipeMaker>
+	<generateCommonality>0.15</generateCommonality>
+	<statBases>
+		<WorkToMake>22000</WorkToMake>
+		<Mass>9</Mass>
+		<AccuracyTouch>0.5</AccuracyTouch>
+		<AccuracyShort>0.3</AccuracyShort>
+		<AccuracyMedium>0.2</AccuracyMedium>
+		<AccuracyLong>0.1</AccuracyLong>
+		<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+</statBases>
+	<verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>TA_Bullet_Ozutsu</defaultProjectile>
+			<warmupTime>3.5</warmupTime>
+			<range>23.9</range>
+			<burstShotCount>1</burstShotCount>
+			<soundCast>Shot_IncendiaryLauncher</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>16</muzzleFlashScale>
+			<targetParams>
+			  <canTargetLocations>true</canTargetLocations>
+			</targetParams>
+	  </li>
+	</verbs>
+	<tools>
+		<li>
+			<label>stock</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>2</cooldownTime>
+		</li>
+		<li>
+			<label>barrel</label>
+			<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+			</capacities>
+			<power>8</power>
+			<cooldownTime>2</cooldownTime>
+		</li>
+	</tools>
+  </ThingDef>
+
+</Defs>

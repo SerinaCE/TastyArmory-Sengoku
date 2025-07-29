@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="TA_ApparelCarryGearBase">
+		<defName>TA_Obi</defName>
+		<label>obi</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Apparel/Accessories/TA_Obi/TA_Obi_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.1</Mass>
+			<Bulk MayRequire="CETeam.CombatExtended">1</Bulk>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.05</SocialImpact>
+			<CarryBulk  MayRequire="CETeam.CombatExtended">5</CarryBulk>
+			<CarryingCapacity>5</CarryingCapacity>
+		</equippedStatOffsets>
+		<costStuffCount>10</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>24</layer>
+				</defaultData>
+			</drawData>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<tags>
+				<li>MedievalArmorDecent</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier7</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Apparel/Accessories/TA_Obi/TA_Obi</wornGraphicPath>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+</Defs>

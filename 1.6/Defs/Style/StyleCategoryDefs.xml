@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>TA_Tokugawa</defName>
+    <label>Tokugawa</label>
+    <iconPath>UI/TA_Crest_Tokugawa</iconPath>
+    <thingDefStyles>
+      <li>
+        <thingDef>TA_Jingasa</thingDef>
+        <styleDef>TA_JingasaCrestTokugawa</styleDef>
+      </li>
+      <li>
+        <thingDef>TA_SashimonoBanner</thingDef>
+        <styleDef>TA_SashimonoBannerTokugawa</styleDef>
+      </li>
+      <li>
+        <thingDef>MeleeWeapon_Knife</thingDef>
+        <styleDef>TA_Tanto</styleDef>
+      </li>
+		</thingDefStyles>
+  </StyleCategoryDef>
+
+  <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>TA_Mori</defName>
+    <label>Mori</label>
+    <iconPath>UI/TA_Crest_Mori</iconPath>
+    <thingDefStyles>
+      <li>
+        <thingDef>TA_Jingasa</thingDef>
+        <styleDef>TA_JingasaCrestMori</styleDef>
+      </li>
+      <li>
+        <thingDef>TA_SashimonoBanner</thingDef>
+        <styleDef>TA_SashimonoBannerMori</styleDef>
+      </li>
+      <li>
+        <thingDef>MeleeWeapon_Knife</thingDef>
+        <styleDef>TA_Tanto</styleDef>
+      </li>
+		</thingDefStyles>
+  </StyleCategoryDef>
+
+  <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>TA_Takeda</defName>
+    <label>Takeda</label>
+    <iconPath>UI/TA_Crest_Takeda</iconPath>
+    <thingDefStyles>
+      <li>
+        <thingDef>TA_Jingasa</thingDef>
+        <styleDef>TA_JingasaCrestTakeda</styleDef>
+      </li>
+      <li>
+        <thingDef>TA_SashimonoBanner</thingDef>
+        <styleDef>TA_SashimonoBannerTakeda</styleDef>
+      </li>
+      <li>
+        <thingDef>MeleeWeapon_Knife</thingDef>
+        <styleDef>TA_Tanto</styleDef>
+      </li>
+		</thingDefStyles>
+  </StyleCategoryDef>
+
+  <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>TA_Uesugi</defName>
+    <label>Uesugi</label>
+    <iconPath>UI/TA_Crest_Uesugi</iconPath>
+    <thingDefStyles>
+      <li>
+        <thingDef>TA_Jingasa</thingDef>
+        <styleDef>TA_JingasaCrestUesugi</styleDef>
+      </li>
+      <li>
+        <thingDef>TA_SashimonoBanner</thingDef>
+        <styleDef>TA_SashimonoBannerUesugi</styleDef>
+      </li>
+      <li>
+        <thingDef>MeleeWeapon_Knife</thingDef>
+        <styleDef>TA_Tanto</styleDef>
+      </li>
+		</thingDefStyles>
+  </StyleCategoryDef>
+
+</Defs>
