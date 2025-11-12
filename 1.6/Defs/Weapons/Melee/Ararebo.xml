@@ -35,6 +35,7 @@
 		</recipeMaker>
 		<weaponTags>
 			<li>MedievalMeleeDecent</li>
+			<li>CE_OneHandedWeapon</li>
 		</weaponTags>
 		<weaponClasses>
 			<li>Melee</li>
