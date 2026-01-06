@@ -45,7 +45,6 @@
 				<li>Neck</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/Armor/TA_ArmoredSleeves/TA_ArmoredSleeves</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>TA_UnderArmor</li>
 			</layers>
