@@ -27,6 +27,11 @@
 			<Bulk MayRequire="CETeam.CombatExtended">4</Bulk>
 			<MeleeCounterParryBonus MayRequire="CETeam.CombatExtended">0.24</MeleeCounterParryBonus>
 		</statBases>
+		<equippedStatOffsets>
+			<MeleeCritChance MayRequire="CETeam.CombatExtended">0.42</MeleeCritChance>
+			<MeleeParryChance MayRequire="CETeam.CombatExtended">0.24</MeleeParryChance>
+			<MeleeDodgeChance MayRequire="CETeam.CombatExtended">0.2</MeleeDodgeChance>
+		</equippedStatOffsets>
 		<recipeMaker>
 			<researchPrerequisite>Smithing</researchPrerequisite>
 			<skillRequirements>

@@ -25,7 +25,7 @@
     </statBases>
     <equippedStatOffsets>
       <CarryBulk MayRequire="CETeam.CombatExtended">10</CarryBulk>
-			<CarryingCapacity>10</CarryingCapacity>
+		<CarryingCapacity>10</CarryingCapacity>
     </equippedStatOffsets>
     <costStuffCount>20</costStuffCount>
     <stuffCategories>
@@ -44,7 +44,7 @@
         <li>Shoulders</li>
       </bodyPartGroups>
       <tags>
-				<li>Neolithic</li>
+		<li>Neolithic</li>
         <li>Medieval</li>
         <li>MedievalMilitary</li>
       </tags>
